@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import type { Book } from '../types';
+import type { Book } from '../types/index';
 import booksData from '../data/enhanced_books.json';
 
 export const useBooks = () => {

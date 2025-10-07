@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { filterBooks, sortBooks, searchBooks, calculateReadingStats } from './bookUtils';
-import type { Book } from '../types';
+import type { Book } from '../types/index';
 
 const mockBooks: Book[] = [
   {

@@ -1,4 +1,4 @@
-import { Book, ReadingStats, FilterOptions, SortOptions } from '../types';
+import type { Book, ReadingStats, FilterOptions, SortOptions } from '../types/index';
 
 export const calculateReadingStats = (books: Book[]): ReadingStats => {
   const totalBooks = books.length;

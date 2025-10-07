@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Book, FilterOptions, SortOptions, ViewMode } from '../types';
+import type { Book, FilterOptions, SortOptions, ViewMode } from '../types/index';
 import { filterBooks, sortBooks, searchBooks } from '../utils/bookUtils';
 
 export const useFilters = (books: Book[]) => {

@@ -1,4 +1,4 @@
-import { Book } from '../types';
+import type { Book } from '../types/index';
 
 /**
  * Export books data to CSV format
