@@ -1,26 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+@theme {
+  --color-book-brown: #8B4513;
+  --color-book-tan: #D2B48C;
+  --color-book-cream: #F5F5DC;
+  --color-book-dark: #2C1810;
 }
 
-@layer components {
-  .book-card {
-    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
-  }
-  
-  .stat-card {
-    @apply bg-gradient-to-br from-book-cream to-book-tan dark:from-gray-800 dark:to-gray-700 p-6 rounded-xl shadow-lg;
-  }
-  
-  .chart-container {
-    @apply bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg;
-  }
+.book-card {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+}
+
+.stat-card {
+  @apply p-6 rounded-xl shadow-lg;
+  background: linear-gradient(to bottom right, #F5F5DC, #D2B48C);
+}
+
+.dark .stat-card {
+  background: linear-gradient(to bottom right, rgb(31 41 55), rgb(55 65 81));
+}
+
+.chart-container {
+  @apply bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg;
 }
