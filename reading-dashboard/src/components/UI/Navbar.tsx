@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Moon, Sun, BookOpen, BarChart3, Search } from 'lucide-react';
+import { Moon, Sun, BookOpen, BarChart3, Search, Target } from 'lucide-react';
 import { useTheme } from '../../hooks/useTheme';
 
 export const Navbar = () => {
@@ -12,6 +12,7 @@ export const Navbar = () => {
     { path: '/', label: 'Dashboard', icon: BookOpen },
     { path: '/books', label: 'Library', icon: Search },
     { path: '/analytics', label: 'Analytics', icon: BarChart3 },
+    { path: '/goals', label: 'Goals', icon: Target },
   ];
 
   return (

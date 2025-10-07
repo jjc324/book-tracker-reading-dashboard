@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard';
 import BookLibrary from './pages/BookLibrary';
 import BookDetail from './pages/BookDetail';
 import Analytics from './pages/Analytics';
+import Goals from './pages/Goals';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/books" element={<BookLibrary />} />
           <Route path="/books/:bookId" element={<BookDetail />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/goals" element={<Goals />} />
         </Routes>
       </Layout>
     </Router>

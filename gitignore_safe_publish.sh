@@ -1,49 +1,24 @@
-# Create/update .gitignore to exclude your personal data
 cat > .gitignore << 'EOF'
-# Dependencies
-node_modules/
-.npm
-.yarn
-
-# Build outputs
-dist/
-build/
-.vite/
-
-# Environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
 # Personal book data - EXCLUDE FROM GITHUB
 my_books.csv
 enhanced_books.json
-src/data/enhanced_books.json
+reading-dashboard/src/data/enhanced_books.json
 reading_dashboard.pdf
 reading_dashboard.png
+reading_dashboard.py
 
-# Python cache
+# System files
+.DS_Store
 __pycache__/
 *.pyc
-*.pyo
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Dependencies
+reading-dashboard/node_modules/
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Build outputs
+reading-dashboard/dist/
+reading-dashboard/build/
+EOF
 
 # Optional: Keep a sample data file
 !sample_books.json
